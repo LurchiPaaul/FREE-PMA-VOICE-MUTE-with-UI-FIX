@@ -1,20 +1,3 @@
---[[
-RegisterNetEvent('sv_mute:show')
-AddEventHandler('sv_mute:show', function()
-    SendNUIMessage({
-        type = "enableui"
-    })
-end)
-
-RegisterNetEvent('sv_mute:hide')
-AddEventHandler('sv_mute:hide', function()
-    SendNUIMessage({
-        type = "disableui"
-    })
-end)]]
-
-
-
 RegisterKeyMapping('mute', 'Stummschalten', 'keyboard', 'm')
 muteme = false
 RegisterCommand('mute', function(source)
