@@ -1,4 +1,4 @@
-
+--[[
 RegisterNetEvent('sv_mute:show')
 AddEventHandler('sv_mute:show', function()
     SendNUIMessage({
@@ -11,7 +11,7 @@ AddEventHandler('sv_mute:hide', function()
     SendNUIMessage({
         type = "disableui"
     })
-end)
+end)]]
 
 
 
